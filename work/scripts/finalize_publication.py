@@ -16,6 +16,7 @@ repo = "https://github.com/Hamza2-2/flyrank-ai-internship"
 
 def replace(path, replacements):
     text = path.read_text(encoding="utf-8")
+    text = text.replace("https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site", url)
     for old, new in replacements:
         text = text.replace(old,new)
     path.write_text(text,encoding="utf-8")
@@ -42,6 +43,7 @@ for cell in nb["cells"]:
     if cell["cell_type"] != "markdown":
         continue
     src = "".join(cell["source"])
+    src = src.replace("https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site", url)
     src = src.replace("Full warehouse analysis, intern validation and public submission are pending.",
                       "Full warehouse analysis, intern validation and portal submission are pending. The public source repository and deployed paper are verified.")
     src = src.replace("The public repository link and `submission/paper_url.txt` must be finalized only after deployment.",

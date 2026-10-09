@@ -1,6 +1,6 @@
 # Sources and interpretation notes
 
-Checked on 9 October 2026 (Asia/Karachi). These notes record the authority and discrepancies used when preparing the requested local deliverables.
+Checked on 9 October 2026 (Asia/Karachi), including final public-deployment verification. These notes record the authority and discrepancies used when preparing the requested deliverables.
 
 ## Pasted assignment cards
 
@@ -32,7 +32,7 @@ Source: [FlyRank ML internship starter](https://github.com/flyrank-bih/flyrank-m
 - [Dataset and lane guide](https://github.com/flyrank-bih/flyrank-ml-internship-starter/blob/main/docs/ml-intern-dataset-and-lane-guide.md): starter dataset is permitted by individual predefined lane descriptions; warehouse is needed for own joins/time windows and stronger temporal labels. Final capstone requires deployed paper, executed notebooks, and root `submission/paper_url.txt`.
 - [Data dictionary](https://github.com/flyrank-bih/flyrank-ml-internship-starter/blob/main/docs/data-dictionary.md) and [data skill](https://github.com/flyrank-bih/flyrank-ml-internship-starter/blob/main/skills/flyrank/flyrank-data/SKILL.md): percent scale, missingness and zero-position semantics, pseudonymous IDs, proxy-label leakage, warehouse panel/availability/window cautions.
 
-Local guidance is the downloaded starter snapshot. Links identify the upstream sources; they do not assert the user's own repository has been published.
+Local guidance is the downloaded starter snapshot. These links identify the upstream sources. Hamza's separate owned repository and verified publication are recorded below.
 
 ### Starter versus warehouse distinction
 
@@ -52,10 +52,21 @@ Checked [official Week 10](https://aifluency.flyrank.ai/week-10.html#send-the-li
 
 ## Honest evidence rules for this package
 
-- Direct user facts confirmed through the root agent: **Hamza Afzal**; **Backend Development and Engineering**; audience **a backend engineering lead**; action **invite me to an interview**; GitHub **Hamza2-2**; explicit confirmation of all 12 recurring workflow tasks. Chosen contact route is a GitHub interview-request issue. Root checked the owner and created the public repository, but final push/deployment had not been verified at the time of this review. Other toolkit/Academy/Claude account and course evidence remain unconfirmed.
+- Direct user facts confirmed through the root agent: **Hamza Afzal**; **Backend Development and Engineering**; audience **a backend engineering lead**; action **invite me to an interview**; GitHub **Hamza2-2**; explicit confirmation of all 12 recurring workflow tasks. Chosen contact route is a GitHub interview-request issue. Confirmed intended next piece: **Deploy and harden the backend review API**. Its production work remains planned. Other toolkit/Academy/Claude account and course evidence remain unconfirmed.
 - Notebook execution logs and saved cell outputs can prove local computation. Static prose that describes a run cannot.
 - API tests can prove local feature behavior. They do not prove a publicly reachable deployment.
 - A calendar import file can prepare a reminder and does not prove calendar installation. The pasted brief explicitly accepts a recurring note, so an actual saved note with a concrete recurring schedule can satisfy that reminder form; state clearly that it produces no automatic notification.
 - Written workspace instructions can preserve reusable context. They do not prove a Claude Project was configured.
 - Public-facing templates and demo scripts can be prepared. An actual demo recording, public post, domain and portal submission require their own evidence.
 - Completion language must distinguish locally verified artifacts from outstanding personal evidence and publication requirements.
+
+## Final publication and verification evidence
+
+- Owned public repository: [Hamza2-2/flyrank-ai-internship](https://github.com/Hamza2-2/flyrank-ai-internship), pushed and anonymously reachable with HTTP 200.
+- Primary published [research paper](https://hamza2-2.github.io/flyrank-ai-internship/) and [backend portfolio](https://hamza2-2.github.io/flyrank-ai-internship/portfolio.html) use owned GitHub Pages. Independent unauthenticated fetches returned HTTP 200, and the paper contains required `flyrank.ai` credit. A native [paper mirror](https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site) was also verified with a standard browser User-Agent; that mirror's platform can reject a default automated client.
+- [Publication receipt](site/publication.json) records primary GitHub Pages publication at commit `d64dc02859e4828dd58f4ba441f5f131e9c015cb` and the verified native Sites mirror. `submission/paper_url.txt` contains exactly the primary direct deployed paper URL. This publishes the paper/portfolio; it does not claim production hosting of the Python API.
+- Saved notebook evidence: starter notebooks eight/seven code cells, ML-02 five, capstone nine; all cells executed and all notebooks have zero error outputs. Public GitHub and site-download copies of ML-02/capstone were independently fetched and carry the same executed-cell counts.
+- [GitHub Actions](https://github.com/Hamza2-2/flyrank-ai-internship/actions) contains passing runs of all three inherited workflows. Independent final inspection verified the [latest smoke run](https://github.com/Hamza2-2/flyrank-ai-internship/actions/runs/37967384678) and [Pages deployment](https://github.com/Hamza2-2/flyrank-ai-internship/actions/runs/37967386837) were both completed successfully. Later pushes can trigger additional runs.
+- Root verified no modifications to upstream reference scripts or bundled data. Eight unassigned notebook templates were relocated and preserved with hashes, then their Colab badge URLs were personalized by the inherited workflow; current hashes are recorded separately. Their code/content was not filled as a completed assignment.
+- Actual recurring reminder note, matching local-note screenshot, saved-context copies and current hashes were checked after Hamza confirmed the next case. There is no external calendar import or automatic notification claim.
+- No portal submission, reviewer acceptance, certificate award, external Claude Project UI, Academy enrollment/module completion, user-owned custom domain, recorded final demo, graduate badge or showcase submission is established by these artifacts.

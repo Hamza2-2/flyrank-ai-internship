@@ -63,7 +63,7 @@ def publication_state():
     try:
         record = json.loads(path.read_text(encoding="utf-8"))
         urls = [record.get("paper_url", ""), record.get("repository_url", "")]
-        valid_urls = all(urlparse(url).scheme == "https" and urlparse(url).hostname
+        valid_urls = all(isinstance(url, str) and urlparse(url).scheme == "https" and urlparse(url).hostname
                          and not urlparse(url).username for url in urls)
         verified = bool(record.get("status") == "succeeded" and record.get("access") == "public"
                         and record.get("verified_at_utc") and record.get("source_commit") and valid_urls)

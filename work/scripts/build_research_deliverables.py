@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import nbformat as nbf
+from capstone_analysis import publication_state
 
 ROOT = Path(__file__).resolve().parents[2]
 M = nbf.v4.new_markdown_cell
@@ -28,7 +29,35 @@ from capstone_analysis import load_data, FEATURES, BANNED, run_study
 '''
 
 
+def publication_copy(text):
+    publication = publication_state()
+    if not publication["verified"]:
+        return text
+    replacements = {
+        "Full warehouse analysis, intern validation and public submission are pending.":
+            "Full warehouse analysis, intern validation and portal submission are pending. The public repository and deployed paper are verified.",
+        "- [ ] Commit to an owned public repository and submit that repository URL.":
+            "- [x] Owned public repository verified.\n- [ ] Submit the repository URL on the internship portal after personal review.",
+        "The public repository link and `submission/paper_url.txt` must be finalized only after deployment.":
+            f"The verified [public repository]({publication['repository_url']}) and [paper]({publication['paper_url']}) are recorded in root submission metadata.",
+        "Notebook, paper and source links will be added after publication.":
+            f"[Paper]({publication['paper_url']}) · [Source repository]({publication['repository_url']}). Personal review and portal submission remain pending.",
+        "- [ ] Owned public repo and deployed paper URL verified and submitted.":
+            "- [x] Owned public repo and deployed paper URL verified.\n- [ ] Actual internship portal submission after personal review.",
+        "Hamza must validate the framing, commit to his owned public repository and submit its URL; those external requirements are pending.":
+            f"The [owned public repository]({publication['repository_url']}) is verified. Hamza must validate the framing and submit the repository URL on the internship portal; personal review and portal submission remain pending.",
+        "The strict attached brief's full-warehouse analysis, first-20 human content review, owned public repository, verified deployed paper and submission remain pending. None is represented as already done.":
+            f"The [public repository]({publication['repository_url']}) and [deployed paper]({publication['paper_url']}) are verified. The strict brief's full-warehouse analysis, first-20 human content review and actual portal submission remain pending.",
+    }
+    for before, after in replacements.items():
+        text = text.replace(before, after)
+    return text
+
+
 def write_notebook(path, cells):
+    for cell in cells:
+        if cell.cell_type == "markdown":
+            cell.source = publication_copy(cell.source)
     nb = nbf.v4.new_notebook(cells=cells)
     nb.metadata["kernelspec"] = {"display_name": "Python 3 (FlyRank)", "language": "python", "name": "flyrank"}
     nb.metadata["language_info"] = {"name": "python", "version": "3.11"}
@@ -87,6 +116,8 @@ def build():
     write_notebook(notebooks / "capstone.ipynb", capstone_cells)
     (assignment / "README.md").write_text("# ML-02 — Research Question and Provisional Lane\n\nAuthor: Hamza Afzal.\n\nThe full deliverable is the executed [canonical notebook](../../notebooks/w01_research_question.ipynb). It selects Ranking Signal Analysis, names a page-level editorial decision, actor/action/error cost, fixes evaluation metrics and computes real supporting numbers from the starter CSV. [Measured evidence](../../outputs/research_question_numbers.json) is reproducible using [analysis source](../../scripts/capstone_analysis.py).\n\nLocal preparation and execution are complete. Hamza must validate the framing, commit to his owned public repository and submit its URL; those external requirements are pending.\n", encoding="utf-8")
     (capstone / "README.md").write_text("# Google Search Ranking & Discoverability Capstone\n\nAuthor: Hamza Afzal · Lane: Ranking Signal Analysis.\n\n- [Executed capstone notebook](../../notebooks/capstone.ipynb)\n- [Research paper source](../../capstone_report.md)\n- [Reproducible analysis](../../scripts/capstone_analysis.py)\n- [Aggregate comparison and audit](../../outputs/capstone_metrics.json)\n- [Ranked review cases](../../outputs/capstone_ranked_actions.json)\n- [Warehouse continuation plan](warehouse_extension_plan.md)\n- [Model card](model_card.md)\n\nCompleted local work is a starter-scoped observational study. The strict attached brief's full-warehouse analysis, first-20 human content review, owned public repository, verified deployed paper and submission remain pending. None is represented as already done. No raw datasets belong in this folder.\n", encoding="utf-8")
+    for path in [assignment / "README.md", capstone / "README.md"]:
+        path.write_text(publication_copy(path.read_text(encoding="utf-8")), encoding="utf-8")
 
 
 if __name__ == "__main__":

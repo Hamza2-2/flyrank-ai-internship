@@ -11,6 +11,7 @@ import hashlib
 import importlib.metadata
 import json
 from pathlib import Path
+from urllib.parse import urlparse
 
 import matplotlib
 matplotlib.use("Agg")
@@ -52,6 +53,25 @@ BANNED = {
 def save_json(name, payload):
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / name).write_text(json.dumps(payload, indent=2, allow_nan=False), encoding="utf-8")
+
+
+def publication_state():
+    """Read a checked local publication receipt; never infer deployment from a draft URL."""
+    path = ROOT / "work" / "site" / "publication.json"
+    if not path.exists():
+        return {"verified": False, "basis": "no local publication receipt"}
+    try:
+        record = json.loads(path.read_text(encoding="utf-8"))
+        urls = [record.get("paper_url", ""), record.get("repository_url", "")]
+        valid_urls = all(isinstance(url, str) and urlparse(url).scheme == "https" and urlparse(url).hostname
+                         and not urlparse(url).username for url in urls)
+        verified = bool(record.get("status") == "succeeded" and record.get("access") == "public"
+                        and record.get("verified_at_utc") and record.get("source_commit") and valid_urls)
+        return {"verified": verified, "paper_url": urls[0], "repository_url": urls[1],
+                "verified_at_utc": record.get("verified_at_utc"),
+                "basis": "validated local publication receipt; notebook reruns do not republish or claim portal submission"}
+    except (OSError, ValueError, TypeError):
+        return {"verified": False, "basis": "local publication receipt could not be validated"}
 
 
 def load_data():
@@ -332,9 +352,17 @@ def run_study():
         "rule_label_limitation": "trend_direction down is a deterministic bucket of measured impression change, not editorial usefulness",
         "source_grain_duplicates": 0,
     }
+    publication = publication_state()
+    pending = ["approved Hugging Face access and local HF_TOKEN", "full warehouse feature and future-outcome construction",
+               "client/time-aware warehouse evaluation", "intern/editor review", "actual internship portal submission after review"]
+    if not publication["verified"]:
+        pending.append("owned public repository and verified deployed paper URL")
     result = {
         "study": "Ranking Signal Analysis: explainable content-review priorities", "date": "2026-10-09",
-        "status": "starter study complete; full-warehouse future-outcome study and public submission pending",
+        "status": ("starter study and public paper complete; full-warehouse study, intern/editor review and portal submission pending"
+                   if publication["verified"] else
+                   "starter study complete; full-warehouse study, intern/editor review, public publication and portal submission pending"),
+        "publication": publication,
         "data": summary, "target": "trend_direction == down; contemporaneous proxy, not future decline",
         "feature_columns": FEATURES, "excluded_columns": sorted(BANNED), "random_seed": SEED,
         "split": split_summary, "split_design": "25% held-out client test; 25% of remaining clients validation; no row-random split",
@@ -355,8 +383,7 @@ def run_study():
                            "meaning": "proxy-negative cases are not proven wasted edits; a proxy-positive case is not proven useful to refresh"},
         "leakage_audit": audit,
         "environment": {package: importlib.metadata.version(package) for package in ["numpy", "pandas", "scikit-learn", "matplotlib"]},
-        "pending_requirements": ["approved Hugging Face access and local HF_TOKEN", "full warehouse feature and future-outcome construction",
-                                  "client/time-aware warehouse evaluation", "intern review", "owned public repository and deployed paper URL"],
+        "pending_requirements": pending,
     }
     save_json("capstone_metrics.json", result)
     save_json("capstone_feature_audit.json", importance)

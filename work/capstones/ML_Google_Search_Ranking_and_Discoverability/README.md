@@ -10,4 +10,4 @@ Author: Hamza Afzal · Lane: Ranking Signal Analysis.
 - [Warehouse continuation plan](warehouse_extension_plan.md)
 - [Model card](model_card.md)
 
-Completed local work is a starter-scoped observational study. The [owned public repository](https://github.com/Hamza2-2/flyrank-ai-internship) and [deployed paper](https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site) are verified. The strict attached brief's full-warehouse analysis, first-20 human content review and portal submission remain pending. No raw datasets belong in this folder.
+Completed local work is a starter-scoped observational study. The [owned public repository](https://github.com/Hamza2-2/flyrank-ai-internship) and [deployed paper](https://hamza2-2.github.io/flyrank-ai-internship/) are verified. The strict attached brief's full-warehouse analysis, first-20 human content review and portal submission remain pending. No raw datasets belong in this folder.

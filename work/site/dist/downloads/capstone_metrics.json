@@ -1,7 +1,14 @@
 {
   "study": "Ranking Signal Analysis: explainable content-review priorities",
   "date": "2026-10-09",
-  "status": "starter study complete; full-warehouse future-outcome study and public submission pending",
+  "status": "starter study and public paper complete; full-warehouse study, intern/editor review and portal submission pending",
+  "publication": {
+    "verified": true,
+    "paper_url": "https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site",
+    "repository_url": "https://github.com/Hamza2-2/flyrank-ai-internship",
+    "verified_at_utc": "2026-10-09T17:32:22.312280+00:00",
+    "basis": "validated local publication receipt; notebook reruns do not republish or claim portal submission"
+  },
   "data": {
     "rows": 30000,
     "columns": 44,
@@ -516,7 +523,7 @@
     "approved Hugging Face access and local HF_TOKEN",
     "full warehouse feature and future-outcome construction",
     "client/time-aware warehouse evaluation",
-    "intern review",
-    "owned public repository and deployed paper URL"
+    "intern/editor review",
+    "actual internship portal submission after review"
   ]
 }
