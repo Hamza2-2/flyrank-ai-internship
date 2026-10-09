@@ -2,49 +2,65 @@
   {
     "original": "work/notebooks/w02_ml_task_framing.ipynb",
     "preserved": "work/templates/notebooks/w02_ml_task_framing.ipynb",
-    "sha256": "d7616edea8880540c5d19bf0257fd896b76230e832e1ac9bb878927ccd7719b9",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "d7616edea8880540c5d19bf0257fd896b76230e832e1ac9bb878927ccd7719b9",
+    "sha256_current": "b0a4f8168d91e7468477d706459f67e964e0a33aac8211ccb022a4d59a514d85",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w03_data_contract.ipynb",
     "preserved": "work/templates/notebooks/w03_data_contract.ipynb",
-    "sha256": "42917df5443a4666caf684adf30fce373a62eabb36a34de9711119f78ea7c649",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "42917df5443a4666caf684adf30fce373a62eabb36a34de9711119f78ea7c649",
+    "sha256_current": "df8ec079d072d307c11210448faa5eb5bd807a08564e2e633e4acb8f29bc2378",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w03_feature_leakage_check.ipynb",
     "preserved": "work/templates/notebooks/w03_feature_leakage_check.ipynb",
-    "sha256": "89a854e803359cffba4ac8a43e0ac61a9456bfbd1e14682ef976278d7454cd4b",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "89a854e803359cffba4ac8a43e0ac61a9456bfbd1e14682ef976278d7454cd4b",
+    "sha256_current": "8901365474256fd40f9aece6c0c1677aaf4f3c6d029158408e67f7208e5f0398",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w04_signal_audit.ipynb",
     "preserved": "work/templates/notebooks/w04_signal_audit.ipynb",
-    "sha256": "6ee06cff98a7b565b55b8366074d6d3ce402c7b80298f84ac41b27b36be9c1e4",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "6ee06cff98a7b565b55b8366074d6d3ce402c7b80298f84ac41b27b36be9c1e4",
+    "sha256_current": "237239869360f587430a5e808335c617be70f3c4e9f8fa2797a2e370bfda04d6",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w04_baseline_score.ipynb",
     "preserved": "work/templates/notebooks/w04_baseline_score.ipynb",
-    "sha256": "b8af3ad5b5621ec8a053d65436def335c30225db8c6a8cdde217f56a7af003e2",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "b8af3ad5b5621ec8a053d65436def335c30225db8c6a8cdde217f56a7af003e2",
+    "sha256_current": "46c14cf95f76dc75bf2c80abcb06af77c0431dbf5a8237301a1c4dad7328e258",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w05_model.ipynb",
     "preserved": "work/templates/notebooks/w05_model.ipynb",
-    "sha256": "147558e844242b125b217c7d7fa2034a9fc5678d99a9d694c6165c4965a7efab",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "147558e844242b125b217c7d7fa2034a9fc5678d99a9d694c6165c4965a7efab",
+    "sha256_current": "474e91697bea142f6e5f21fd61e96ce01815e46f14294e127e2182ee7d5f6613",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w06_validation_audit.ipynb",
     "preserved": "work/templates/notebooks/w06_validation_audit.ipynb",
-    "sha256": "3ec62927eff268bbf90c9b0df3d821527a1b35473a429562db44a4c08c53823a",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "3ec62927eff268bbf90c9b0df3d821527a1b35473a429562db44a4c08c53823a",
+    "sha256_current": "622dd0a4c0738616de171b6e7fd49e403e75d9fefba61afe6786890fa5cc4453",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   },
   {
     "original": "work/notebooks/w07_action_playbook.ipynb",
     "preserved": "work/templates/notebooks/w07_action_playbook.ipynb",
-    "sha256": "2ba4635c5087c0bf903576ed3c235c162d89c99ceb5973e03450709bb58307a5",
-    "assigned": false
+    "assigned": false,
+    "sha256_at_relocation": "2ba4635c5087c0bf903576ed3c235c162d89c99ceb5973e03450709bb58307a5",
+    "sha256_current": "32097e8511aec5a976f80d569049e4f6feb1e03861bc8f0ceb4285953696850c",
+    "post_relocation_change": "Inherited GitHub personalize workflow changed only the Colab badge repository target."
   }
 ]

@@ -2,7 +2,7 @@
 
 Author: Hamza Afzal · 9 October 2026 · Machine Learning capstone
 
-Completed scope: a reproducible local starter study. The attached capstone brief points to the full warehouse; this study uses the starter dataset explicitly permitted for Ranking Signal Analysis in the supplied lane guide. Full-release analysis, intern/editor validation, owned-repository publication and a verified deployed paper URL remain pending. No full-warehouse results are claimed.
+Completed scope: a reproducible local starter study. The attached capstone brief points to the full warehouse; this study uses the starter dataset explicitly permitted for Ranking Signal Analysis in the supplied lane guide. The owned public repository and deployed paper are now published. Full-release analysis and intern/editor validation remain pending. No full-warehouse results are claimed.
 
 ## 0. Abstract
 
@@ -93,7 +93,7 @@ python work/scripts/capstone_analysis.py
 
 Execute [the canonical capstone notebook](notebooks/capstone.ipynb) top to bottom using that environment; it calls the same pipeline and regenerates JSON and figures. The final saved notebook has visible outputs. [ML-02 framing](notebooks/w01_research_question.ipynb), [analysis source](scripts/capstone_analysis.py), [metrics and exact versions](outputs/capstone_metrics.json), [leakage audit](outputs/capstone_leakage_audit.json), and [feature audit](outputs/capstone_feature_audit.json) are the evidence. The executed environment used NumPy 2.4.6, pandas 3.0.6, scikit-learn 1.9.1 and matplotlib 3.11.2. Random seeds and source checksum are recorded in JSON. Reference scripts and bundled data are unchanged; local mapping CSVs and future caches must remain ignored by git.
 
-The [warehouse continuation plan](capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_extension_plan.md) specifies manifest/grain/availability checks, middle-month development, prior-only features, future outcomes, client/time-aware validation and a single final cached scan. These steps need approved Hugging Face access and a locally supplied read token. Human validation and a public repository/deployed-paper URL are separate pending requirements. Put the verified direct paper URL, exactly one line, in `submission/paper_url.txt` only after publication, and submit the owned repository URL.
+The [warehouse continuation plan](capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_extension_plan.md) specifies manifest/grain/availability checks, middle-month development, prior-only features, future outcomes, client/time-aware validation and a single final cached scan. These steps need approved Hugging Face access and a locally supplied read token. Human validation remains pending. The public [repository](https://github.com/Hamza2-2/flyrank-ai-internship) and [deployed paper](https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site) are verified; root `submission/paper_url.txt` records the direct paper URL. Submit the owned repository URL on the portal card after personal review. No portal submission is claimed.
 
 ## 9. Acknowledgments and data credit
 

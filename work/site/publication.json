@@ -1,0 +1,13 @@
+{
+  "status": "succeeded",
+  "paper_url": "https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site",
+  "portfolio_url": "https://hamza-afzal-flyrank-research.chirpy-vine-4912.chatgpt.site/portfolio.html",
+  "repository_url": "https://github.com/Hamza2-2/flyrank-ai-internship",
+  "project_id": "appgprj_6ac91f8a6aa48191afe4d05f3cb6f569",
+  "version_id": "appgprj_6ac91f8a6aa48191afe4d05f3cb6f569~appgver_bcf7f1ce14f88191b2f23c6169803396",
+  "deployment_id": "appgdep_6ac924ee779881918937fbd01f88b09a",
+  "source_commit": "c8068455e76b19a816e58b4ad780b16b0a1d4cbb",
+  "verified_at_utc": "2026-10-09T17:32:22.312280+00:00",
+  "access": "public",
+  "backend_hosting": "local demonstration; production deployment is the confirmed next case"
+}

@@ -1,0 +1,30 @@
+{
+  "ids_excluded_from_features": true,
+  "trend_fields_excluded": true,
+  "all_six_30_day_trend_input_fields_excluded": true,
+  "client_overlap_between_partitions": 0,
+  "imputation_scaling_encoding_fitted_on_train": true,
+  "final_refit_scope": "train plus validation clients, never test clients",
+  "baseline_empirical_cdfs_fit_scope": "development clients for final test; training clients for validation",
+  "label_shuffling_control": {
+    "split": "validation only",
+    "rows": 1766,
+    "base_rate": 0.4694224235560589,
+    "majority_class_accuracy": 0.5305775764439411,
+    "both_classes_observed": true,
+    "roc_auc": 0.30222342949613334,
+    "average_precision": 0.3705820625705636,
+    "precision_at_50": 0.62,
+    "effective_k_at_50": 50,
+    "lift_at_50_vs_base_rate": 1.3207720144752715,
+    "precision_at_100": 0.33,
+    "effective_k_at_100": 100,
+    "lift_at_100_vs_base_rate": 0.7029915560916767,
+    "precision_at_250": 0.164,
+    "effective_k_at_250": 250,
+    "lift_at_250_vs_base_rate": 0.3493655006031363
+  },
+  "no_future_validation": "90-day feature totals overlap the label window; only contemporaneous held-client discrimination is measured",
+  "rule_label_limitation": "trend_direction down is a deterministic bucket of measured impression change, not editorial usefulness",
+  "source_grain_duplicates": 0
+}

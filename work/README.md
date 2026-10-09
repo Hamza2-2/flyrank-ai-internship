@@ -61,4 +61,4 @@ the easiest to forget, which is exactly why it has a row here.
 
 ## Requested submission scope
 
-This request contains ML-01, ML-02 and the ML capstone, plus the separate AI Fluency tasks. Eight unassigned curriculum skeletons are preserved byte-for-byte in `templates/notebooks/`; `templates/relocation_receipt.json` records their checksums. They are resources for future work. Active `notebooks/` contains the executed requested ML-02 and capstone deliverables. See `SUBMISSION_INDEX.md` for all eight task folders.
+This request contains ML-01, ML-02 and the ML capstone, plus the separate AI Fluency tasks. Eight unassigned curriculum skeletons were relocated unchanged, then had only their Colab badges personalized in `templates/notebooks/`; `templates/relocation_receipt.json` records their checksums. They are resources for future work. Active `notebooks/` contains the executed requested ML-02 and capstone deliverables. See `SUBMISSION_INDEX.md` for all eight task folders.

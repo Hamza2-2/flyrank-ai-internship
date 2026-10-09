@@ -85,4 +85,11 @@ The public static website hosts the paper, downloadable evidence, and source. Th
 
 To add the next case, extend the portfolio's problem/work/outcome section in `work/scripts/build_site.py`, rerun the build, review locally, and republish. Hamza confirmed the next case: Deploy and harden the backend review API. An optional standalone case page belongs at `dist/cases/backend-api-deployment.html` after real production work exists. Record the actual hosting, HTTPS, authentication/rate limits, tests, rollback, and deployment evidence.
 ''',encoding="utf-8")
-print(f"Built {len(list(DIST.rglob('*')))} public-safe site paths")
+# GitHub Pages publication is a generated mirror; editable source remains under work/.
+for path in DIST.rglob("*"):
+    if path.is_file() and ".openai" not in path.relative_to(DIST).parts:
+        target = ROOT / "docs" / path.relative_to(DIST)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(path, target)
+(ROOT / "docs/.nojekyll").write_text("", encoding="utf-8")
+print(f"Built {len(list(DIST.rglob('*')))} public-safe site paths and GitHub Pages mirror")

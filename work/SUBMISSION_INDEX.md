@@ -23,7 +23,7 @@ The supplied file contains **five distinct assignments and three capstones**. ML
 - The [backend API](backend_api/README.md) has a documented OpenAPI contract and 12 passing real HTTP integration tests. The service runs locally; its fixed rule is distinct from the trained capstone model.
 - [Browser verification](site/qa/verification.json) covers paper/portfolio at desktop and mobile sizes, all local links/downloads, ranking controls, actual API success and validation errors.
 - The [requirements matrix](REQUIREMENTS_MATRIX.md) maps every pasted criterion to evidence or an outstanding action. [Source notes](SOURCE_NOTES.md) explain differences from live guidance.
-- Unassigned curriculum notebooks are preserved in [templates](templates/README.md), with byte-preservation receipts. They are not represented as completed assignments.
+- Unassigned curriculum notebooks are preserved in [templates](templates/README.md), with relocation and badge-personalization hash receipts. They are not represented as completed assignments.
 
 ## Personal actions still needed
 
