@@ -1,0 +1,50 @@
+[
+  {
+    "original": "work/notebooks/w02_ml_task_framing.ipynb",
+    "preserved": "work/templates/notebooks/w02_ml_task_framing.ipynb",
+    "sha256": "d7616edea8880540c5d19bf0257fd896b76230e832e1ac9bb878927ccd7719b9",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w03_data_contract.ipynb",
+    "preserved": "work/templates/notebooks/w03_data_contract.ipynb",
+    "sha256": "42917df5443a4666caf684adf30fce373a62eabb36a34de9711119f78ea7c649",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w03_feature_leakage_check.ipynb",
+    "preserved": "work/templates/notebooks/w03_feature_leakage_check.ipynb",
+    "sha256": "89a854e803359cffba4ac8a43e0ac61a9456bfbd1e14682ef976278d7454cd4b",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w04_signal_audit.ipynb",
+    "preserved": "work/templates/notebooks/w04_signal_audit.ipynb",
+    "sha256": "6ee06cff98a7b565b55b8366074d6d3ce402c7b80298f84ac41b27b36be9c1e4",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w04_baseline_score.ipynb",
+    "preserved": "work/templates/notebooks/w04_baseline_score.ipynb",
+    "sha256": "b8af3ad5b5621ec8a053d65436def335c30225db8c6a8cdde217f56a7af003e2",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w05_model.ipynb",
+    "preserved": "work/templates/notebooks/w05_model.ipynb",
+    "sha256": "147558e844242b125b217c7d7fa2034a9fc5678d99a9d694c6165c4965a7efab",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w06_validation_audit.ipynb",
+    "preserved": "work/templates/notebooks/w06_validation_audit.ipynb",
+    "sha256": "3ec62927eff268bbf90c9b0df3d821527a1b35473a429562db44a4c08c53823a",
+    "assigned": false
+  },
+  {
+    "original": "work/notebooks/w07_action_playbook.ipynb",
+    "preserved": "work/templates/notebooks/w07_action_playbook.ipynb",
+    "sha256": "2ba4635c5087c0bf903576ed3c235c162d89c99ceb5973e03450709bb58307a5",
+    "assigned": false
+  }
+]

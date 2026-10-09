@@ -1,0 +1,61 @@
+{
+  "browser": "Google Chrome headless",
+  "created_date": "2026-10-09",
+  "external_actions": "none",
+  "outputs": [
+    {
+      "path": "work/assignments/FL-01_AI_Workflow_Audit_and_Tool_Setup/deliverable.pdf",
+      "size_bytes": 93615,
+      "sha256": "2a891f261b27aff57e5732eb6e4116375468e59261bd3bacc60f77cecebeaf13",
+      "type": "browser-printed PDF"
+    },
+    {
+      "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/deliverable.pdf",
+      "size_bytes": 83577,
+      "sha256": "a8e6beee73f2ba9cc68d416a2d5dd6073a1d3f7c9fe73dd68db8b2ccaea2428c",
+      "type": "browser-printed PDF"
+    },
+    {
+      "path": "work/assignments/What_Are_You_Proving/deliverable.pdf",
+      "size_bytes": 73920,
+      "sha256": "a63b94f1a006f21159d4e138a7d862241d181cc299076df9de07099ac75c9fe2",
+      "type": "browser-printed PDF"
+    },
+    {
+      "path": "work/capstones/FL_General_AI_Fluency_Impact_Project/deliverable.pdf",
+      "size_bytes": 91607,
+      "sha256": "edecbe75b8d3e45e3acbfa7ceae30ab433388b8f8d84b2e99ae5bedd87c35f05",
+      "type": "browser-printed PDF"
+    },
+    {
+      "path": "work/capstones/Send_the_Link_Launch_Demo_and_Story/deliverable.pdf",
+      "size_bytes": 91482,
+      "sha256": "67b4a42d59c9858b5cd3036a48694a1332d3a95e87a1c50e1ea393b235a38ce2",
+      "type": "browser-printed PDF"
+    },
+    {
+      "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/sitemap.png",
+      "size_bytes": 75805,
+      "sha256": "47755e8ece78756da8b707d9737215c1cf3f22881508df8a5b460c28745706f7",
+      "type": "actual local browser screenshot"
+    },
+    {
+      "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/context_doc_screenshot.png",
+      "size_bytes": 267034,
+      "sha256": "8328c73dade4d21b6584412b4767e14c123b3379ed3c5ba396e9537018e82e23",
+      "type": "actual local browser screenshot"
+    },
+    {
+      "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/pressure_test_screenshot.png",
+      "size_bytes": 187000,
+      "sha256": "761a0c24d30d06595e44797a2e54311bc7320cd4b2c560df64fdf19b689a85d9",
+      "type": "actual local browser screenshot"
+    },
+    {
+      "path": "work/context/reminder_screenshot.png",
+      "size_bytes": 70950,
+      "sha256": "91818b98981076c07fafd1a7b1f324b3e590832a05234105b2fab39705024196",
+      "type": "actual local browser screenshot"
+    }
+  ]
+}

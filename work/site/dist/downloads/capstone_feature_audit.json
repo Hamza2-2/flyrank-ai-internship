@@ -1,0 +1,112 @@
+[
+  {
+    "feature": "search_volume",
+    "ap_drop_mean": -0.0002806924646347464,
+    "ap_drop_std": 6.860769321544496e-05
+  },
+  {
+    "feature": "competition",
+    "ap_drop_mean": -0.0011062864566628028,
+    "ap_drop_std": 0.0007479563482450863
+  },
+  {
+    "feature": "cpc",
+    "ap_drop_mean": -8.335533742154233e-05,
+    "ap_drop_std": 7.11800554969073e-06
+  },
+  {
+    "feature": "word_count",
+    "ap_drop_mean": 0.0033073790387606883,
+    "ap_drop_std": 0.0016274498185600012
+  },
+  {
+    "feature": "log_impressions_90d",
+    "ap_drop_mean": 0.08223537075481843,
+    "ap_drop_std": 0.00785064690204794
+  },
+  {
+    "feature": "log_clicks_90d",
+    "ap_drop_mean": 0.11303240965843306,
+    "ap_drop_std": 0.005239301795115977
+  },
+  {
+    "feature": "log_sessions_90d",
+    "ap_drop_mean": 0.00847989710227881,
+    "ap_drop_std": 0.003743237418904424
+  },
+  {
+    "feature": "days_with_impressions",
+    "ap_drop_mean": -0.0012394649076472308,
+    "ap_drop_std": 0.0027123433910167063
+  },
+  {
+    "feature": "days_with_sessions",
+    "ap_drop_mean": 0.003098207378672002,
+    "ap_drop_std": 0.0010472434035169692
+  },
+  {
+    "feature": "content_age_days",
+    "ap_drop_mean": 0.015541536057996158,
+    "ap_drop_std": 0.0034435651490694755
+  },
+  {
+    "feature": "days_since_last_update",
+    "ap_drop_mean": -1.712913692430984e-05,
+    "ap_drop_std": 0.0040236361138454475
+  },
+  {
+    "feature": "ctr",
+    "ap_drop_mean": -0.00011160619594008381,
+    "ap_drop_std": 7.047317406463887e-05
+  },
+  {
+    "feature": "avg_position",
+    "ap_drop_mean": 0.007094173708330459,
+    "ap_drop_std": 0.005128460298429226
+  },
+  {
+    "feature": "engagement_rate",
+    "ap_drop_mean": -0.0010852076840089098,
+    "ap_drop_std": 0.0011051671006858201
+  },
+  {
+    "feature": "scroll_rate",
+    "ap_drop_mean": 0.006960959161786046,
+    "ap_drop_std": 0.00421535430866578
+  },
+  {
+    "feature": "has_keyword_data",
+    "ap_drop_mean": 0.04133912399459275,
+    "ap_drop_std": 0.0038491425231843572
+  },
+  {
+    "feature": "has_word_count",
+    "ap_drop_mean": 0.0,
+    "ap_drop_std": 0.0
+  },
+  {
+    "feature": "has_position",
+    "ap_drop_mean": 0.07401236804760145,
+    "ap_drop_std": 0.01491893764575118
+  },
+  {
+    "feature": "has_scroll_measurement",
+    "ap_drop_mean": 0.0,
+    "ap_drop_std": 0.0
+  },
+  {
+    "feature": "content_type",
+    "ap_drop_mean": -0.00039740543919325466,
+    "ap_drop_std": 0.0006321519308576121
+  },
+  {
+    "feature": "competition_level",
+    "ap_drop_mean": 0.027874885212495593,
+    "ap_drop_std": 0.007373615377849743
+  },
+  {
+    "feature": "main_intent",
+    "ap_drop_mean": 0.0070517403877947415,
+    "ap_drop_std": 0.0032657569523305793
+  }
+]

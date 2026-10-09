@@ -1,0 +1,18 @@
+[
+  {
+    "path": "notebooks/01_first_look_and_discovery.ipynb",
+    "code_cells": 8,
+    "executed_cells": 8,
+    "cells_with_outputs": 8,
+    "errors": 0,
+    "your_turn_attempted": true
+  },
+  {
+    "path": "notebooks/02_your_first_readable_model.ipynb",
+    "code_cells": 7,
+    "executed_cells": 7,
+    "cells_with_outputs": 7,
+    "errors": 0,
+    "your_turn_attempted": true
+  }
+]

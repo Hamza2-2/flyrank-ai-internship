@@ -20,13 +20,13 @@ no private client data, no setup headaches.
 
 The fastest path is Google Colab (one click, zero install). Open Notebook 1 and run all cells:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/notebooks/01_first_look_and_discovery.ipynb?flush_cache=true)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/notebooks/01_first_look_and_discovery.ipynb?flush_cache=true)
  **Week 1 — Run it, then discover a real truth yourself**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/notebooks/02_your_first_readable_model.ipynb?flush_cache=true)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/notebooks/02_your_first_readable_model.ipynb?flush_cache=true)
  **Week 2 — The model is just a rule you can read**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/notebooks/03_working_with_the_full_release.ipynb?flush_cache=true)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/notebooks/03_working_with_the_full_release.ipynb?flush_cache=true)
  **Weeks 3+ — The full release (~79M rows) via DuckDB, no download needed** — hosted at
  [`FlyRank/internship-warehouse`](https://huggingface.co/datasets/FlyRank/internship-warehouse) (gated: request access + accept the data-use terms, approval is instant)
 
@@ -46,16 +46,16 @@ already pre-filled with your repo and the right path.
 
 | Week | Card | Notebook | Open |
 |---|---|---|---|
-| 1 | ML-02 | `w01_research_question` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w01_research_question.ipynb?flush_cache=true) |
-| 2 | ML-03 | `w02_ml_task_framing` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w02_ml_task_framing.ipynb?flush_cache=true) |
-| 3 | ML-04 | `w03_data_contract` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w03_data_contract.ipynb?flush_cache=true) |
-| 3 | ML-05 | `w03_feature_leakage_check` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w03_feature_leakage_check.ipynb?flush_cache=true) |
-| 4 | ML-06 | `w04_signal_audit` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w04_signal_audit.ipynb?flush_cache=true) |
-| 4 | ML-07 | `w04_baseline_score` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w04_baseline_score.ipynb?flush_cache=true) |
-| 5 | ML-08 | `w05_model` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w05_model.ipynb?flush_cache=true) |
-| 6 | ML-09 | `w06_validation_audit` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w06_validation_audit.ipynb?flush_cache=true) |
-| 7 | ML-10 | `w07_action_playbook` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/w07_action_playbook.ipynb?flush_cache=true) |
-| 8 | ML-11 | `capstone` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/flyrank-bih/flyrank-ml-internship-starter/blob/main/work/notebooks/capstone.ipynb?flush_cache=true) |
+| 1 | ML-02 | `w01_research_question` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w01_research_question.ipynb?flush_cache=true) |
+| 2 | ML-03 | `w02_ml_task_framing` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w02_ml_task_framing.ipynb?flush_cache=true) |
+| 3 | ML-04 | `w03_data_contract` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w03_data_contract.ipynb?flush_cache=true) |
+| 3 | ML-05 | `w03_feature_leakage_check` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w03_feature_leakage_check.ipynb?flush_cache=true) |
+| 4 | ML-06 | `w04_signal_audit` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w04_signal_audit.ipynb?flush_cache=true) |
+| 4 | ML-07 | `w04_baseline_score` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w04_baseline_score.ipynb?flush_cache=true) |
+| 5 | ML-08 | `w05_model` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w05_model.ipynb?flush_cache=true) |
+| 6 | ML-09 | `w06_validation_audit` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w06_validation_audit.ipynb?flush_cache=true) |
+| 7 | ML-10 | `w07_action_playbook` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/w07_action_playbook.ipynb?flush_cache=true) |
+| 8 | ML-11 | `capstone` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hamza2-2/flyrank-ai-internship/blob/main/work/notebooks/capstone.ipynb?flush_cache=true) |
 
 Badges not opening *your* copy? Colab's built-in opener always works: **File → Open notebook
 → GitHub tab** → paste `github.com/you/your-repo` → pick the notebook.
@@ -145,3 +145,13 @@ build on — and the `skills/` folder here is the instruction library for your A
 ---
 
 *Track leads: Mirza Ašćerić (ML) · Hole (data engineering). Code under MIT (see `LICENSE`); data under `DATA_USE.md`.*
+# Hamza Afzal — FlyRank AI internship
+
+Each of the five requested assignments and three capstones has its own named folder under `work/assignments/` or `work/capstones/`. Start with the [submission index](work/SUBMISSION_INDEX.md) for deliverables, saved outputs, and outstanding personal evidence. The [requirements matrix](work/REQUIREMENTS_MATRIX.md) maps every pasted criterion to its status.
+
+Public repository: https://github.com/Hamza2-2/flyrank-ai-internship. The direct deployed research-paper URL is recorded in [submission/paper_url.txt](submission/paper_url.txt). The [backend API](work/backend_api/README.md) is runnable locally and has 12 passing real HTTP integration tests. The [paper and portfolio source](work/site/README.md) includes downloadable executed evidence and a local API demo.
+
+This is AI-assisted work for Hamza to run, understand, and review. Personal account/course/Claude evidence and a strict full-warehouse extension remain explicitly outstanding. No portal submission or certificate award is claimed. Eight unassigned curriculum skeletons are preserved in [work/templates/](work/templates/README.md).
+
+---
+

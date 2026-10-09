@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "page": "index",
+      "viewport": "desktop",
+      "no_horizontal_overflow": true,
+      "images_loaded": true
+    },
+    {
+      "page": "portfolio",
+      "viewport": "desktop",
+      "no_horizontal_overflow": true,
+      "images_loaded": true
+    },
+    {
+      "page": "index",
+      "viewport": "mobile",
+      "no_horizontal_overflow": true,
+      "images_loaded": true
+    },
+    {
+      "page": "portfolio",
+      "viewport": "mobile",
+      "no_horizontal_overflow": true,
+      "images_loaded": true
+    }
+  ],
+  "browser_errors": [],
+  "download_checks": 54,
+  "api_demo": {
+    "actual_http_status": 200,
+    "example_score": 9.24,
+    "method": "transparent_fixed_rule_v1"
+  },
+  "api_validation_error": 422
+}

@@ -1,0 +1,78 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Hamza Afzal Local Review Priorities API",
+    "version": "1.0.0",
+    "description": "Loopback demonstration. Fixed transparent rules, no model inference or request persistence. Submit synthetic page IDs and signals only."
+  },
+  "servers": [{"url": "http://127.0.0.1:8787"}],
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "Check the local service",
+        "responses": {"200": {"description": "Service is running", "content": {"application/json": {"schema": {"type": "object", "properties": {"status": {"const": "ok"}, "service": {"const": "local-review-api"}, "persistence": {"const": "none"}}, "required": ["status", "service", "persistence"]}}}}}
+      }
+    },
+    "/api/v1/metrics": {
+      "get": {
+        "operationId": "aggregateMetrics",
+        "summary": "Read safe aggregate held-out metrics from the capstone receipts",
+        "responses": {
+          "200": {"description": "Whitelisted numeric aggregate metrics, without row-level exports", "content": {"application/json": {"schema": {"type": "object", "required": ["scope", "selected_model", "test_metrics"], "properties": {"scope": {"type": "string"}, "selected_model": {"enum": ["rule_baseline", "logistic_regression", "random_forest"]}, "test_metrics": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": {"type": ["number", "null"]}}}}}}}},
+          "503": {"$ref": "#/components/responses/MetricsUnavailable"}
+        }
+      }
+    },
+    "/api/v1/review-priorities": {
+      "post": {
+        "operationId": "reviewPriorities",
+        "summary": "Rank 1–50 synthetic pages with deterministic transparent rules",
+        "description": "Requires one valid Content-Length, application/json, finite numeric values and no duplicate JSON keys. Limit 32768 bytes. IDs must be unique. Rates are percentage points. Eligibility requires impressions >= 500 and position > 0; review pages precede monitor pages, then score descending, then ID ascending.",
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ReviewRequest"}, "example": {"pages": [{"page_id": "page_demo_001", "impressions_90d": 1200, "ctr_pct": 0.4, "avg_position": 8, "days_since_last_update": 220, "word_count": 850}]}}}},
+        "responses": {
+          "200": {"description": "Ranked decision-support queue; not a forecast", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ReviewResponse"}}}},
+          "400": {"$ref": "#/components/responses/InvalidRequest"},
+          "408": {"$ref": "#/components/responses/InvalidRequest"},
+          "411": {"$ref": "#/components/responses/InvalidRequest"},
+          "413": {"$ref": "#/components/responses/InvalidRequest"},
+          "415": {"$ref": "#/components/responses/InvalidRequest"},
+          "422": {"$ref": "#/components/responses/InvalidRequest"}
+        }
+      },
+      "options": {
+        "operationId": "localPreflight",
+        "summary": "Allow browser-demo preflight for documented local origins",
+        "parameters": [{"name": "Origin", "in": "header", "required": true, "schema": {"type": "string"}}],
+        "responses": {"204": {"description": "Local origin allowed"}, "403": {"$ref": "#/components/responses/InvalidRequest"}}
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {"type": "object", "required": ["error"], "properties": {"error": {"type": "object", "required": ["code", "message"], "properties": {"code": {"type": "string"}, "message": {"type": "string"}}}}},
+      "PageSignals": {
+        "type": "object", "additionalProperties": false,
+        "required": ["page_id", "impressions_90d", "ctr_pct", "avg_position", "days_since_last_update"],
+        "properties": {
+          "page_id": {"type": "string", "pattern": "^page_[A-Za-z0-9_-]{1,40}$", "description": "Synthetic ID, not a URL or name"},
+          "impressions_90d": {"type": "integer", "minimum": 0, "maximum": 1000000000},
+          "ctr_pct": {"type": "number", "minimum": 0, "maximum": 100, "description": "Percentage points; 0.4 means 0.4%"},
+          "avg_position": {"type": "number", "minimum": 0, "maximum": 100, "description": "0 means unavailable"},
+          "days_since_last_update": {"type": "integer", "minimum": 0, "maximum": 36500},
+          "word_count": {"type": ["integer", "null"], "minimum": 0, "maximum": 1000000}
+        }
+      },
+      "ReviewRequest": {"type": "object", "additionalProperties": false, "required": ["pages"], "properties": {"pages": {"type": "array", "minItems": 1, "maxItems": 50, "items": {"$ref": "#/components/schemas/PageSignals"}}}},
+      "Recommendation": {
+        "type": "object", "required": ["page_id", "review_score", "action", "eligible_for_review", "reason_codes", "rank"],
+        "properties": {"page_id": {"type": "string"}, "review_score": {"type": "number", "minimum": 0, "maximum": 100}, "action": {"enum": ["review", "monitor"]}, "eligible_for_review": {"type": "boolean"}, "reason_codes": {"type": "array", "items": {"enum": ["sufficient_search_volume", "low_volume_monitor", "position_unavailable", "stale_visible_page", "low_ctr_with_strong_position", "thin_visible_page", "word_count_unavailable"]}}, "rank": {"type": "integer", "minimum": 1, "maximum": 50}}
+      },
+      "ReviewResponse": {"type": "object", "required": ["method", "scope", "rate_unit", "count", "recommendations"], "properties": {"method": {"const": "transparent_fixed_rule_v1"}, "scope": {"type": "string"}, "rate_unit": {"type": "string"}, "count": {"type": "integer", "minimum": 1, "maximum": 50}, "recommendations": {"type": "array", "items": {"$ref": "#/components/schemas/Recommendation"}}}}
+    },
+    "responses": {
+      "InvalidRequest": {"description": "Stable validation/framing error; submitted values are never echoed", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Error"}}}},
+      "MetricsUnavailable": {"description": "Capstone aggregate metrics are not yet available or valid", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Error"}}}}
+    }
+  }
+}

@@ -1,0 +1,17 @@
+test_bad_numbers_and_types_rejected (__main__.APIIntegrationTests.test_bad_numbers_and_types_rejected) ... ok
+test_body_limit_and_content_type (__main__.APIIntegrationTests.test_body_limit_and_content_type) ... ok
+test_deterministic_ranking_and_known_score (__main__.APIIntegrationTests.test_deterministic_ranking_and_known_score) ... ok
+test_health_has_no_persistence (__main__.APIIntegrationTests.test_health_has_no_persistence) ... ok
+test_malformed_duplicate_and_nonfinite_json_rejected (__main__.APIIntegrationTests.test_malformed_duplicate_and_nonfinite_json_rejected) ... ok
+test_metrics_unavailable_corrupt_and_safe_allowlist (__main__.APIIntegrationTests.test_metrics_unavailable_corrupt_and_safe_allowlist) ... ok
+test_missing_duplicate_length_and_chunked_rejected (__main__.APIIntegrationTests.test_missing_duplicate_length_and_chunked_rejected) ... ok
+test_numeric_limits_and_optional_missing_words (__main__.APIIntegrationTests.test_numeric_limits_and_optional_missing_words) ... ok
+test_page_count_limits (__main__.APIIntegrationTests.test_page_count_limits) ... ok
+test_stable_ties_and_eligibility_boundary (__main__.APIIntegrationTests.test_stable_ties_and_eligibility_boundary) ... ok
+test_unsafe_duplicate_and_extra_fields_rejected (__main__.APIIntegrationTests.test_unsafe_duplicate_and_extra_fields_rejected) ... ok
+test_wrong_route_method_and_cors (__main__.APIIntegrationTests.test_wrong_route_method_and_cors) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 6.249s
+
+OK

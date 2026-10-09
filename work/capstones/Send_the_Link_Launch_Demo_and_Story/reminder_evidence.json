@@ -1,0 +1,17 @@
+{
+  "evidence_kind": "actual saved local recurring note",
+  "external_calendar_imported": false,
+  "automatic_notification_service": false,
+  "created_date": "2026-10-09",
+  "first_due": "2026-10-16T18:00:00+05:00",
+  "timezone": "Asia/Karachi",
+  "recurrence": "every Friday at 18:00 until case is added",
+  "note": "work/context/portfolio_maintenance_reminder.md",
+  "sha256": "6c621bee6cb63958329926d701035f4980dab600a01722675db17ec705f4602b",
+  "calendar_aid": "work/context/portfolio_maintenance_reminder.ics",
+  "next_case": "Deploy and harden the backend review API",
+  "next_case_intention_status": "explicitly confirmed by Hamza",
+  "next_case_work_status": "planned; production hosting, HTTPS, authentication/rate limits, tests, rollback, and deployment evidence are not done",
+  "next_case_page": "work/site/dist/cases/backend-api-deployment.html",
+  "screenshot_provenance": "headless Chrome screenshot of the actual local reminder HTML; no external calendar UI"
+}

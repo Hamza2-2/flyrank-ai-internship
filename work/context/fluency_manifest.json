@@ -1,0 +1,23 @@
+{
+  "created_date": "2026-10-09",
+  "timezone": "Asia/Karachi",
+  "name": "Hamza Afzal",
+  "confirmed_field": "Backend Development and Engineering",
+  "audience_status": "confirmed",
+  "action_status": "confirmed",
+  "weekly_tasks_status": "all 12 confirmed by user",
+  "github_username": "Hamza2-2",
+  "next_case": "Deploy and harden the backend review API",
+  "next_case_intention_status": "confirmed by user",
+  "next_case_work_status": "planned; no production deployment or hardening claimed",
+  "next_case_page": "work/site/dist/cases/backend-api-deployment.html",
+  "folders": [
+    "work/assignments/FL-01_AI_Workflow_Audit_and_Tool_Setup",
+    "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit",
+    "work/assignments/What_Are_You_Proving",
+    "work/capstones/FL_General_AI_Fluency_Impact_Project",
+    "work/capstones/Send_the_Link_Launch_Demo_and_Story"
+  ],
+  "external_actions": "none by these document-generation scripts",
+  "verification_notebooks": "not applicable to prose deliverables"
+}

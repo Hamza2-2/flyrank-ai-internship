@@ -1,0 +1,224 @@
+{
+  "scope": "bounded demonstration from held-out starter pages; no automatic changes",
+  "recommendations": [
+    {
+      "rank": 1,
+      "case": "Review case R01",
+      "review_score": 0.9412,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 2,
+      "case": "Review case R02",
+      "review_score": 0.9092,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 3,
+      "case": "Review case R03",
+      "review_score": 0.9024,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 4,
+      "case": "Review case R04",
+      "review_score": 0.9008,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 5,
+      "case": "Review case R05",
+      "review_score": 0.8955,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 6,
+      "case": "Review case R06",
+      "review_score": 0.8946,
+      "action": "Inspect current search evidence and monitor",
+      "reason_codes": [
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 7,
+      "case": "Review case R07",
+      "review_score": 0.894,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 8,
+      "case": "Review case R08",
+      "review_score": 0.893,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 9,
+      "case": "Review case R09",
+      "review_score": 0.8851,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 10,
+      "case": "Review case R10",
+      "review_score": 0.8847,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 11,
+      "case": "Review case R11",
+      "review_score": 0.8833,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 12,
+      "case": "Review case R12",
+      "review_score": 0.8818,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 13,
+      "case": "Review case R13",
+      "review_score": 0.8818,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 14,
+      "case": "Review case R14",
+      "review_score": 0.8783,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 15,
+      "case": "Review case R15",
+      "review_score": 0.8746,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 16,
+      "case": "Review case R16",
+      "review_score": 0.8745,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 17,
+      "case": "Review case R17",
+      "review_score": 0.8739,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 18,
+      "case": "Review case R18",
+      "review_score": 0.8727,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 19,
+      "case": "Review case R19",
+      "review_score": 0.8706,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    },
+    {
+      "rank": 20,
+      "case": "Review case R20",
+      "review_score": 0.8697,
+      "action": "Review title, description and query intent",
+      "reason_codes": [
+        "low_ctr_review",
+        "model_associated_with_current_decline_proxy"
+      ],
+      "confidence": "unvalidated editorial action; score is a current-proxy ranking, not causal benefit"
+    }
+  ]
+}

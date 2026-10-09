@@ -1,0 +1,17 @@
+{
+  "rows": 30000,
+  "columns": 44,
+  "clients": 32,
+  "eligible_rows": 30000,
+  "declining_rows": 16262,
+  "declining_share": 0.5420666666666667,
+  "stale_visible_rows": 17,
+  "visible_rows_500": 16726,
+  "no_position_rows": 1205,
+  "missing_word_count_rows": 7699,
+  "missing_keyword_rows": 2468,
+  "scroll_rate_above_100_rows": 119,
+  "ai_traffic_pct_above_100_rows": 23,
+  "source_sha256": "c43bdac4eccfa17fcd8a33974fe36f2c998c03a3ae3af8d80cf712abab5d6396",
+  "time_scope": "trailing 90 days at starter export; calendar end not supplied in starter dictionary"
+}

@@ -1,0 +1,6 @@
+# Notebook execution and local browser verification beyond the starter runtime.
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6.29
+playwright>=1.50
+Markdown>=3.6
