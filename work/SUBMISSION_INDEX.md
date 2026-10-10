@@ -6,6 +6,8 @@ Public submission repository: **https://github.com/Hamza2-2/flyrank-ai-internshi
 
 The supplied file contains **five distinct assignments and three capstones**. ML-02 was duplicated; it has one deliverable. The two AI Fluency capstones share the same pasted brief but each has its own named folder.
 
+For labeled completion steps, evidence filenames, warehouse execution and portal uploads, follow [COMPLETION_AND_SUBMISSION_GUIDE.md](COMPLETION_AND_SUBMISSION_GUIDE.md). The guarded [warehouse notebook runner](scripts/execute_warehouse_notebook.py) defaults to preflight only; actual execution requires private local login and `--run`.
+
 | Task | Main deliverable | Current scope |
 |---|---|---|
 | [FL-01 — AI Workflow Audit and Tool Setup](assignments/FL-01_AI_Workflow_Audit_and_Tool_Setup/README.md) | [Two-page audit PDF](assignments/FL-01_AI_Workflow_Audit_and_Tool_Setup/deliverable.pdf) | 12 user-confirmed recurring tasks, classifications/rationales, two just-me decisions, three measurable targets; account/course/Claude UI evidence still required |
