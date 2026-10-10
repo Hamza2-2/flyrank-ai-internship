@@ -11,9 +11,10 @@
     },
     {
       "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/deliverable.pdf",
-      "size_bytes": 84727,
-      "sha256": "f8ede75798c6b427df2d2bdf4730c9356cd87caed670d16d3fa25ce1b567c44f",
-      "type": "browser-printed PDF"
+      "size_bytes": 72003,
+      "sha256": "b28aa41f250e625787c50664fde3a901fd05d7d6ac39080461618eda0e9a9dd9",
+      "type": "browser-printed PDF",
+      "updated_date": "2026-10-10"
     },
     {
       "path": "work/assignments/What_Are_You_Proving/deliverable.pdf",
@@ -35,9 +36,10 @@
     },
     {
       "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/sitemap.png",
-      "size_bytes": 79414,
-      "sha256": "372e29b34d68aa81a263dab4c7f237b7fd4ba33be1f93021cef63fc054d1facd",
-      "type": "actual local browser screenshot"
+      "size_bytes": 83850,
+      "sha256": "8ac01cb4d03706ad89536f87e3547d54c35066843c71a9b6f9f324103fed4992",
+      "type": "actual local browser screenshot",
+      "updated_date": "2026-10-10"
     },
     {
       "path": "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit/context_doc_screenshot.png",
@@ -57,5 +59,7 @@
       "sha256": "91818b98981076c07fafd1a7b1f324b3e590832a05234105b2fab39705024196",
       "type": "actual local browser screenshot"
     }
-  ]
+  ],
+  "updated_date": "2026-10-10",
+  "followup_note": "Only the Draw the Path PDF and digital sitemap were re-rendered for the user-pasted pressure test; no external app screenshot was generated."
 }

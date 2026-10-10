@@ -96,6 +96,20 @@ def requirement_block(folder, title, body, status):
     write(folder / "README.md", f"# {title}\n\nPrepared for {NAME} on {DATE}, Asia/Karachi.\n\n{status}\n\nOpen `deliverable.pdf` or `deliverable.html`; the Markdown is editable. `source_requirements.md` records the supplied card. Evidence and missing items are explicit in the deliverable. This task is kept separate from every other assignment/capstone.\n\nOwned project repository: {REPO}. See the repository's submission index for publication status. Do not submit a task as fully complete until its required personal evidence is confirmed. The document-generation scripts do not submit to the internship portal or send interview requests.\n")
 
 
+def pressure_test_followup():
+    folder = ROOT / "work/assignments/Draw_the_Path_Portfolio_Sitemap_and_Toolkit"
+    if not (folder / "claude_pressure_test.md").exists():
+        return ""
+    return '''
+
+## Follow-up pressure test supplied by Hamza — 10 October 2026
+
+The response Hamza pasted is preserved in [claude_pressure_test.md](claude_pressure_test.md). Its original sent prompt and external app/project screenshot remain to be supplied; this file is not a verified export from Claude. The earlier Codex transcript remains separate.
+
+The implemented follow-up opens the backend case with direct contract, server-source and recorded-test-output links, shows an actual negative-CTR HTTP 422 response immediately below, and repeats the same interview action beside that evidence. The digital sitemap names those links explicitly. See [change_after_pressure_test.md](change_after_pressure_test.md) for before/after, actual verification artifacts and the pending personal review.
+'''
+
+
 def main():
     CONTEXT.mkdir(parents=True, exist_ok=True)
     context = f'''# Hamza Afzal — backend portfolio build context
@@ -369,7 +383,7 @@ Open `pressure_test.md`/`pressure_test.html` for the actual prompt and answer pr
 
 Prepared: map, context doc, actual pressure-test output, documented changes, exact user-confirmed claim/field/person/action, and a user-chosen GitHub interview-request link. Pending: toolkit account evidence and genuine Claude/physical sketch evidence if required by the supplied card. The screenshot artifacts show local files and must never be described as external account UI.
 '''
-    doc(map_folder, "deliverable", sitemap)
+    doc(map_folder, "deliverable", sitemap + pressure_test_followup())
     svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
     <title id="title">Hamza Afzal backend proof portfolio sitemap</title><desc id="desc">Landing claim flows to inspectable API evidence, brief about, and one interview action; deploying and hardening the backend API is the confirmed planned next case.</desc>
     <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L0 6 L8 3 Z" fill="#236577"/></marker></defs>
@@ -377,8 +391,8 @@ Prepared: map, context doc, actual pressure-test output, documented changes, exa
     <text x="60" y="60" font-size="30" font-weight="700">Hamza Afzal · Backend proof portfolio</text><text x="60" y="96" font-size="18">Revised digital sitemap · 2026-10-09 · Claim/audience/action confirmed</text>
     <rect x="60" y="137" width="1160" height="130" rx="14" fill="#123d51"/><text x="90" y="177" font-size="23" font-weight="700" fill="white">ONE USER-CONFIRMED CLAIM</text><text x="90" y="213" font-size="22" fill="white">I can build a tested backend API that converts anonymized search signals</text><text x="90" y="244" font-size="22" fill="white">into explainable content-review priorities.</text>
     <rect x="60" y="320" width="260" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="84" y="359" font-size="22" font-weight="700">1 · LAND</text><text x="84" y="398" font-size="18">portfolio.html</text><text x="84" y="438" font-size="17">Hero + narrow claim</text><text x="84" y="469" font-size="17">Featured API proof</text><text x="84" y="500" font-size="17">Short about section</text><text x="84" y="548" font-size="15" fill="#236577">One landing; no extra blog</text>
-    <rect x="390" y="320" width="410" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="418" y="359" font-size="22" font-weight="700">2 · BELIEVE</text><text x="418" y="398" font-size="18">portfolio.html#work · API case</text><text x="418" y="438" font-size="17">Problem → build → outcome</text><text x="418" y="469" font-size="17">Contract + request/response</text><text x="418" y="500" font-size="17">Checks + bad-input example</text><text x="418" y="531" font-size="17">Reason codes + research link</text><text x="418" y="565" font-size="15" fill="#236577">API runs locally; explicit limitations</text>
-    <rect x="870" y="320" width="350" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="897" y="359" font-size="22" font-weight="700">3 · ACT</text><text x="897" y="398" font-size="18">Same landing · contact</text><text x="897" y="438" font-size="17">One confirmed action:</text><text x="897" y="469" font-size="17">Invite Hamza to interview</text><text x="897" y="512" font-size="17">GitHub interview-request form</text><text x="897" y="550" font-size="15" fill="#236577">Opens a form; visitor chooses to submit</text>
+    <rect x="390" y="320" width="410" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="418" y="359" font-size="22" font-weight="700">2 · BELIEVE</text><text x="418" y="398" font-size="18">portfolio.html#work · API case</text><a href="https://github.com/Hamza2-2/flyrank-ai-internship/blob/main/work/backend_api/openapi.json"><text x="418" y="438" font-size="16" fill="#236577">Contract link → openapi.json</text></a><a href="https://github.com/Hamza2-2/flyrank-ai-internship/blob/main/work/backend_api/server.py"><text x="418" y="469" font-size="16" fill="#236577">Source link → server.py</text></a><a href="https://github.com/Hamza2-2/flyrank-ai-internship/blob/main/work/backend_api/TEST_RESULTS.txt"><text x="418" y="500" font-size="16" fill="#236577">Passing-test link → TEST_RESULTS.txt</text></a><text x="418" y="531" font-size="16">Recorded 422 → adjacent interview link</text><text x="418" y="565" font-size="15" fill="#236577">API runs locally; explicit limitations</text>
+    <rect x="870" y="320" width="350" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="897" y="359" font-size="22" font-weight="700">3 · ACT</text><text x="897" y="398" font-size="17">Beside evidence + About/contact</text><text x="897" y="438" font-size="17">One confirmed action:</text><text x="897" y="469" font-size="17">Invite Hamza to interview</text><text x="897" y="512" font-size="17">GitHub interview-request form</text><text x="897" y="550" font-size="15" fill="#236577">Opens a form; visitor chooses to submit</text>
     <path d="M320 451 H379" stroke="#236577" stroke-width="3" marker-end="url(#arrow)"/><path d="M800 451 H859" stroke="#236577" stroke-width="3" marker-end="url(#arrow)"/>
     <rect x="390" y="660" width="830" height="130" rx="14" fill="#e7f2f4" stroke="#236577" stroke-dasharray="7 5"/><text x="418" y="699" font-size="20" font-weight="700">NEXT CASE · Deploy and harden the backend review API</text><text x="418" y="734" font-size="17">cases/backend-api-deployment.html · intention confirmed, work planned</text><text x="418" y="767" font-size="16">Hosting · HTTPS · auth/rate limits · tests · rollback · actual deployment evidence</text>
     <path d="M596 590 V648" stroke="#236577" stroke-width="3" marker-end="url(#arrow)"/>

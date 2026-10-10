@@ -37,6 +37,8 @@ The API contract is [openapi.json](openapi.json). Request fields are strict; unk
 
 Validation responses use a stable `{"error":{"code":"…","message":"…"}}` shape. Error messages do not echo submitted values. `400` means invalid JSON/framing, `408` body timeout, `411` missing Content-Length, `413` oversized body, `415` unsupported media type, and `422` invalid schema/signal/ID. Unknown routes return `404`, and GET on the ranking route returns `405`.
 
+The [recorded bad-input example](bad_input_example.json) contains an actual loopback HTTP request with synthetic data and `ctr_pct: -1`. Its observed response is HTTP 422 with `invalid_signal` and `ctr_pct is outside its allowed range.` Reproduce it through the local portfolio demo using the recorded request. The static portfolio shows this response beside direct contract/source/test-output links and the interview action; it is a recorded example, not a publicly hosted API.
+
 ## Transparent rule
 
 For each page:

@@ -26,11 +26,16 @@
     }
   ],
   "browser_errors": [],
-  "download_checks": 56,
+  "download_checks": 62,
   "api_demo": {
     "actual_http_status": 200,
     "example_score": 9.24,
     "method": "transparent_fixed_rule_v1"
   },
-  "api_validation_error": 422
+  "api_validation_error": 422,
+  "evidence_strip": {
+    "direct_links": 3,
+    "recorded_error_matches_live_response": true,
+    "adjacent_interview_link": true
+  }
 }

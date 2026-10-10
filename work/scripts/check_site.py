@@ -55,16 +55,23 @@ try:
                     assert page.locator("#ranking-explorer details").first.get_attribute("open") is not None
                     assert page.locator("#ranking-explorer details").count() == 20
                 if name == "portfolio" and device == "desktop":
+                    assert page.locator('.api-evidence a').count() == 3
+                    assert 'invalid_signal' in page.locator('#bad-input-response').inner_text()
+                    assert page.locator('#bad-input-proof + p a').get_attribute('href').startswith('https://github.com/Hamza2-2/flyrank-ai-internship/issues/new?')
                     page.locator("#api-run").click()
                     page.wait_for_function("document.getElementById('api-output').textContent.includes('HTTP 200')")
                     result = page.locator("#api-output").inner_text()
                     assert '"review_score": 9.24' in result
                     assert 'transparent_fixed_rule_v1' in result
                     receipt["api_demo"] = {"actual_http_status":200,"example_score":9.24,"method":"transparent_fixed_rule_v1"}
-                    page.locator("#api-payload").fill('{"pages":[]}')
+                    bad_input = json.loads((ROOT / 'work/backend_api/bad_input_example.json').read_text(encoding='utf-8'))
+                    page.locator("#api-payload").fill(json.dumps(bad_input['request']))
                     page.locator("#api-run").click()
                     page.wait_for_function("document.getElementById('api-output').textContent.includes('HTTP 422')")
+                    actual_error = json.loads(page.locator('#api-output').inner_text().split('\n', 1)[1])
+                    assert actual_error == bad_input['response']
                     receipt["api_validation_error"] = 422
+                    receipt["evidence_strip"] = {"direct_links": 3, "recorded_error_matches_live_response": True, "adjacent_interview_link": True}
                     page.locator("#api-payload").fill('{"pages":[{"page_id":"page_demo_001","impressions_90d":1200,"ctr_pct":0.4,"avg_position":8,"days_since_last_update":220,"word_count":850}]}')
                     page.locator("#api-run").click()
                     page.wait_for_function("document.getElementById('api-output').textContent.includes('HTTP 200')")

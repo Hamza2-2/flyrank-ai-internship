@@ -35,3 +35,10 @@ Open `pressure_test.md`/`pressure_test.html` for the actual prompt and answer pr
 ## Submission status
 
 Prepared: map, context doc, actual pressure-test output, documented changes, exact user-confirmed claim/field/person/action, and a user-chosen GitHub interview-request link. Pending: toolkit account evidence and genuine Claude/physical sketch evidence if required by the supplied card. The screenshot artifacts show local files and must never be described as external account UI.
+
+
+## Follow-up pressure test supplied by Hamza — 10 October 2026
+
+The response Hamza pasted is preserved in [claude_pressure_test.md](claude_pressure_test.md). Its original sent prompt and external app/project screenshot remain to be supplied; this file is not a verified export from Claude. The earlier Codex transcript remains separate.
+
+The implemented follow-up opens the backend case with direct contract, server-source and recorded-test-output links, shows an actual negative-CTR HTTP 422 response immediately below, and repeats the same interview action beside that evidence. The digital sitemap names those links explicitly. See [change_after_pressure_test.md](change_after_pressure_test.md) for before/after, actual verification artifacts and the pending personal review.
