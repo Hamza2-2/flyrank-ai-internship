@@ -26,6 +26,9 @@ outputs/*.csv
 # --- Intern work area ------------------------------------------------------
 # your experiments live in work/; datasets never enter git
 work/**/*.csv
+# Warehouse aggregates, client split membership and fitted models remain local.
+work/outputs/warehouse_cache/
+work/outputs/warehouse_replays/
 
 # --- Python / notebooks ----------------------------------------------------
 __pycache__/

@@ -2,7 +2,7 @@
 
 Hamza Afzal · 2026-10-09
 
-**Personalized proof statement.** Name, field, audience, and action were supplied/confirmed by Hamza in this conversation. The assistant helped narrow the wording to one concrete API engineering claim. Hamza should read it aloud and change any phrasing he cannot stand behind.
+**User-confirmed proof statement.** Hamza explicitly confirmed the exact primary claim: “I can build a tested backend API that converts anonymized search signals into explainable content-review priorities.” Name, field, audience, and action are also confirmed. The assistant helped narrow the wording. Confirmation does not establish that Hamza has reviewed or understood all AI-assisted code.
 
 ## One-paragraph proof statement
 
@@ -17,11 +17,11 @@ A CV can name backend engineering; an owned portfolio can let someone inspect th
 | Element | Choice | Evidence/status |
 | --- | --- | --- |
 | Primary skill | Backend development and engineering, demonstrated through one tested API | Hamza supplied the field in this conversation |
-| Specific proof | Tested API that converts safe search-signal inputs into explained review priorities | Actual local backend at `work/backend_api/`; synthetic request examples and passing HTTP checks are recorded |
+| Specific proof | I can build a tested backend API that converts anonymized search signals into explainable content-review priorities. | Exact narrow claim explicitly confirmed by Hamza; local backend, synthetic examples, and passing HTTP checks are recorded |
 | One person | A backend engineering lead | Confirmed by Hamza |
 | One action | Invite Hamza to an interview about this backend project | Confirmed by Hamza |
 
-The assistant asked for identity, skill, audience/action, recurring weekly tasks, and GitHub/contact. Hamza supplied: Hamza Afzal; Backend Development and Engineering; a backend engineering lead; invite me to an interview; coding/debugging/planning/designing, followed by explicit confirmation of the 12 audit tasks; GitHub Hamza2-2. This records actual known inputs without inventing a longer interview transcript.
+The assistant asked for identity, skill, audience/action, recurring weekly tasks, and GitHub/contact. Hamza supplied his name/field, backend lead audience, interview action, 12 audit tasks, and GitHub Hamza2-2. He also explicitly confirmed the exact narrow API claim quoted above. This records actual inputs without inventing a longer interview transcript or code-understanding evidence.
 
 Reflection still needed: What can Hamza explain and modify himself after the AI-assisted build? Which detail would he remove because it overstates his current ability? The audience and action have already been answered.
 

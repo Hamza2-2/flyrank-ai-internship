@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Karachi",
+  "confirmed_by": "Hamza Afzal",
+  "source": "explicit confirmations in this conversation",
+  "exact_primary_claim": "I can build a tested backend API that converts anonymized search signals into explainable content-review priorities",
+  "audience": "A backend engineering lead",
+  "one_action": "invite me to an interview",
+  "next_real_piece": "Deploy and harden the backend review API",
+  "contact_method": "GitHub interview-request form",
+  "contact_link": "https://github.com/Hamza2-2/flyrank-ai-internship/issues/new?title=Interview%20invitation%20for%20Hamza%20Afzal",
+  "next_piece_intention_status": "confirmed",
+  "next_piece_work_status": "planned; production deployment/hardening is not done",
+  "code_review_understanding_status": "not established by claim confirmation",
+  "account_course_completion_status": "unconfirmed; genuine evidence pending"
+}

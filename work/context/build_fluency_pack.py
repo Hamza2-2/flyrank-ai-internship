@@ -19,7 +19,7 @@ CLAIM = "I can build a tested backend API that converts anonymized search signal
 AUDIENCE = "a backend engineering lead evaluating my backend project"
 ACTION = "invite me to an interview about this backend project"
 PROOF = f"I am {NAME}, focusing on backend development and engineering. {CLAIM} I am building this proof for {AUDIENCE}, so they can {ACTION}. The API contract, input validation, automated checks, and runnable example provide the evidence; any results from the starter dataset demonstrate a prototype rather than production readiness."
-FACTS = "Hamza confirmed his name, backend field, audience (a backend engineering lead), action (invite me to an interview), all 12 recurring weekly tasks, GitHub username Hamza2-2, and the next real piece 'Deploy and harden the backend review API' in this conversation. Account setup, Academy completion, and external Claude Project UI are not confirmed."
+FACTS = "Hamza explicitly confirmed the exact narrow portfolio claim above, his name, backend field, audience (a backend engineering lead), action (invite me to an interview), all 12 recurring weekly tasks, GitHub username Hamza2-2, and the next real piece 'Deploy and harden the backend review API' in this conversation. Claim confirmation does not establish that he has reviewed or understood all the AI-assisted code. Account setup, Academy completion, and external Claude Project UI remain unconfirmed."
 
 
 def write(path, text):
@@ -146,6 +146,37 @@ The supplied assignment cards are the controlling scope. The [current FlyRank We
 '''
     doc(CONTEXT, "project_context", context)
     write(CONTEXT / "claude_project_instructions.txt", context)
+    receipt = f'''# User confirmation receipt
+
+Date: 2026-10-09 · Asia/Karachi
+Source: Hamza Afzal's confirmations in this conversation.
+
+| Portfolio decision | User-confirmed value |
+| --- | --- |
+| Exact primary claim | “{CLAIM.rstrip('.')}” |
+| Audience | A backend engineering lead |
+| One action | Invite me to an interview |
+| Next real piece | Deploy and harden the backend review API |
+
+Hamza also chose the GitHub interview-request link in his owned repository as the contact path. The next piece is a confirmed intention; production deployment/hardening is future work. This receipt does not establish review/understanding of all AI-assisted code, account setup, or course completion.
+'''
+    doc(CONTEXT, "user_confirmation_receipt", receipt)
+    write(CONTEXT / "user_confirmations.json", json.dumps({
+        "date": DATE,
+        "timezone": "Asia/Karachi",
+        "confirmed_by": NAME,
+        "source": "explicit confirmations in this conversation",
+        "exact_primary_claim": CLAIM.rstrip('.'),
+        "audience": "A backend engineering lead",
+        "one_action": "invite me to an interview",
+        "next_real_piece": "Deploy and harden the backend review API",
+        "contact_method": "GitHub interview-request form",
+        "contact_link": INTERVIEW,
+        "next_piece_intention_status": "confirmed",
+        "next_piece_work_status": "planned; production deployment/hardening is not done",
+        "code_review_understanding_status": "not established by claim confirmation",
+        "account_course_completion_status": "unconfirmed; genuine evidence pending",
+    }, indent=2))
     reminder = '''# Recurring portfolio maintenance note
 
 Created: 2026-10-09 (Asia/Karachi)
@@ -230,12 +261,12 @@ The 12 tasks are already confirmed against Hamza's real week, and architecture/f
     doc(audit_folder, "deliverable", audit)
 
     proof_folder = WORK / "assignments" / "What_Are_You_Proving"
-    requirement_block(proof_folder, "What Are You Proving?", "One paragraph naming one primary skill, one specific hiring/engagement person, and one action, plus one honest line explaining why owning a portfolio adds proof beyond a CV/LinkedIn. Use AI as an interviewer and thinking partner; the final claim must be the intern's own.", "Status: Hamza confirmed identity, backend field, backend lead audience, and interview invitation action. Personalized statement and one-line why prepared; Hamza must review and be able to explain the demonstrated work.")
+    requirement_block(proof_folder, "What Are You Proving?", "One paragraph naming one primary skill, one specific hiring/engagement person, and one action, plus one honest line explaining why owning a portfolio adds proof beyond a CV/LinkedIn. Use AI as an interviewer and thinking partner; the final claim must be the intern's own.", "Status: Hamza explicitly confirmed the exact narrow portfolio claim, identity, backend field, backend lead audience, and interview invitation action. Statement and one-line why prepared. Confirmation does not establish that Hamza has reviewed or understood all AI-assisted code.")
     proof = f'''# What Are You Proving?
 
 {NAME} · {DATE}
 
-**Personalized proof statement.** Name, field, audience, and action were supplied/confirmed by Hamza in this conversation. The assistant helped narrow the wording to one concrete API engineering claim. Hamza should read it aloud and change any phrasing he cannot stand behind.
+**User-confirmed proof statement.** Hamza explicitly confirmed the exact primary claim: “{CLAIM}” Name, field, audience, and action are also confirmed. The assistant helped narrow the wording. Confirmation does not establish that Hamza has reviewed or understood all AI-assisted code.
 
 ## One-paragraph proof statement
 
@@ -250,11 +281,11 @@ A CV can name backend engineering; an owned portfolio can let someone inspect th
 | Element | Choice | Evidence/status |
 | --- | --- | --- |
 | Primary skill | Backend development and engineering, demonstrated through one tested API | Hamza supplied the field in this conversation |
-| Specific proof | Tested API that converts safe search-signal inputs into explained review priorities | Actual local backend at `work/backend_api/`; synthetic request examples and passing HTTP checks are recorded |
+| Specific proof | {CLAIM} | Exact narrow claim explicitly confirmed by Hamza; local backend, synthetic examples, and passing HTTP checks are recorded |
 | One person | A backend engineering lead | Confirmed by Hamza |
 | One action | Invite Hamza to an interview about this backend project | Confirmed by Hamza |
 
-The assistant asked for identity, skill, audience/action, recurring weekly tasks, and GitHub/contact. Hamza supplied: Hamza Afzal; Backend Development and Engineering; a backend engineering lead; invite me to an interview; coding/debugging/planning/designing, followed by explicit confirmation of the 12 audit tasks; GitHub Hamza2-2. This records actual known inputs without inventing a longer interview transcript.
+The assistant asked for identity, skill, audience/action, recurring weekly tasks, and GitHub/contact. Hamza supplied his name/field, backend lead audience, interview action, 12 audit tasks, and GitHub Hamza2-2. He also explicitly confirmed the exact narrow API claim quoted above. This records actual inputs without inventing a longer interview transcript or code-understanding evidence.
 
 Reflection still needed: What can Hamza explain and modify himself after the AI-assisted build? Which detail would he remove because it overstates his current ability? The audience and action have already been answered.
 
@@ -272,7 +303,7 @@ Date: {DATE}, Asia/Karachi. Tool: Codex assistant in this live conversation. Thi
 
 ## Prompt evaluated
 
-My name is {NAME}. My primary skill is backend development and engineering. My proof statement is: {PROOF}
+My name is {NAME}. My primary skill is backend development and engineering. I explicitly confirmed this exact narrow primary claim in this conversation: “{CLAIM}” My proof statement is: {PROOF}
 
 Sitemap: a landing page at `portfolio.html` with hero/claim, detailed API case section at `#work`, short about, and one contact action. The case links to runnable API documentation/checks and a supporting research page at `index.html`. The confirmed contact action is a GitHub interview-request form in my owned repository: {INTERVIEW}. My confirmed next piece is Deploy and harden the backend review API; its case is added only after actual production work/evidence exists. Does this walk my one person from landing, to believing me, to taking my one action? Which parts earn their place, which waste attention, and what evidence is missing? Pressure-test the plan against backend engineering; be specific and identify at least one change.
 
@@ -297,7 +328,7 @@ Acceptance check: within 30 seconds a visitor can identify Hamza's field, the sp
 3. Show the API's actual limitation and a documented invalid-input example.
 4. Label the confirmed backend deployment/hardening intention as planned; add the actual case page only after production work/evidence is ready.
 
-The sitemap SVG/PNG reflects this revised plan and the confirmed field/person/action. Hamza should review the narrowed API claim against the built evidence.
+The sitemap SVG/PNG reflects this revised plan and the user-confirmed exact claim/field/person/action. Claim confirmation is distinct from reviewing and understanding every AI-assisted code path; no such review completion is asserted.
 '''
     doc(map_folder, "pressure_test", pressure)
     sitemap = f'''# Draw the Path — Portfolio Sitemap + Toolkit
@@ -308,7 +339,7 @@ The sitemap SVG/PNG reflects this revised plan and the confirmed field/person/ac
 
 {PROOF}
 
-Audience/action are confirmed. Owned repo: [flyrank-ai-internship]({REPO}). The [GitHub interview-request link]({INTERVIEW}) opens a prefilled issue form; the visitor chooses whether to submit it. Opening the link does not send a request automatically.
+The exact narrow primary claim, audience, and action are explicitly user-confirmed. Owned repo: [flyrank-ai-internship]({REPO}). The [GitHub interview-request link]({INTERVIEW}) opens a prefilled issue form; the visitor chooses whether to submit it. Opening the link does not send a request automatically. Code review/understanding is not established by claim confirmation.
 
 ## Small sitemap and page purpose
 
@@ -336,15 +367,15 @@ Open `pressure_test.md`/`pressure_test.html` for the actual prompt and answer pr
 
 ## Submission status
 
-Prepared: map, context doc, actual pressure-test output, documented changes, confirmed field/person/action, and a user-chosen GitHub interview-request link. Pending: toolkit account evidence and genuine Claude/physical sketch evidence if required by the supplied card. The screenshot artifacts show local files and must never be described as external account UI.
+Prepared: map, context doc, actual pressure-test output, documented changes, exact user-confirmed claim/field/person/action, and a user-chosen GitHub interview-request link. Pending: toolkit account evidence and genuine Claude/physical sketch evidence if required by the supplied card. The screenshot artifacts show local files and must never be described as external account UI.
 '''
     doc(map_folder, "deliverable", sitemap)
     svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="850" viewBox="0 0 1280 850" role="img" aria-labelledby="title desc">
     <title id="title">Hamza Afzal backend proof portfolio sitemap</title><desc id="desc">Landing claim flows to inspectable API evidence, brief about, and one interview action; deploying and hardening the backend API is the confirmed planned next case.</desc>
     <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L0 6 L8 3 Z" fill="#236577"/></marker></defs>
     <rect width="1280" height="850" fill="#f4f8f9"/><g font-family="Arial,sans-serif" fill="#132d3c">
-    <text x="60" y="60" font-size="30" font-weight="700">Hamza Afzal · Backend proof portfolio</text><text x="60" y="96" font-size="18">Revised digital sitemap · 2026-10-09 · Audience/action confirmed</text>
-    <rect x="60" y="137" width="1160" height="130" rx="14" fill="#123d51"/><text x="90" y="177" font-size="23" font-weight="700" fill="white">ONE CLAIM</text><text x="90" y="213" font-size="22" fill="white">Build a tested API that turns anonymized search signals</text><text x="90" y="244" font-size="22" fill="white">into explainable content-review priorities.</text>
+    <text x="60" y="60" font-size="30" font-weight="700">Hamza Afzal · Backend proof portfolio</text><text x="60" y="96" font-size="18">Revised digital sitemap · 2026-10-09 · Claim/audience/action confirmed</text>
+    <rect x="60" y="137" width="1160" height="130" rx="14" fill="#123d51"/><text x="90" y="177" font-size="23" font-weight="700" fill="white">ONE USER-CONFIRMED CLAIM</text><text x="90" y="213" font-size="22" fill="white">I can build a tested backend API that converts anonymized search signals</text><text x="90" y="244" font-size="22" fill="white">into explainable content-review priorities.</text>
     <rect x="60" y="320" width="260" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="84" y="359" font-size="22" font-weight="700">1 · LAND</text><text x="84" y="398" font-size="18">portfolio.html</text><text x="84" y="438" font-size="17">Hero + narrow claim</text><text x="84" y="469" font-size="17">Featured API proof</text><text x="84" y="500" font-size="17">Short about section</text><text x="84" y="548" font-size="15" fill="#236577">One landing; no extra blog</text>
     <rect x="390" y="320" width="410" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="418" y="359" font-size="22" font-weight="700">2 · BELIEVE</text><text x="418" y="398" font-size="18">portfolio.html#work · API case</text><text x="418" y="438" font-size="17">Problem → build → outcome</text><text x="418" y="469" font-size="17">Contract + request/response</text><text x="418" y="500" font-size="17">Checks + bad-input example</text><text x="418" y="531" font-size="17">Reason codes + research link</text><text x="418" y="565" font-size="15" fill="#236577">API runs locally; explicit limitations</text>
     <rect x="870" y="320" width="350" height="270" rx="14" fill="white" stroke="#236577" stroke-width="2"/><text x="897" y="359" font-size="22" font-weight="700">3 · ACT</text><text x="897" y="398" font-size="18">Same landing · contact</text><text x="897" y="438" font-size="17">One confirmed action:</text><text x="897" y="469" font-size="17">Invite Hamza to interview</text><text x="897" y="512" font-size="17">GitHub interview-request form</text><text x="897" y="550" font-size="15" fill="#236577">Opens a form; visitor chooses to submit</text>
@@ -401,7 +432,7 @@ The local reminder/context exist; Hamza confirmed the next intention and GitHub 
 The [live Week 10 guide](https://aifluency.flyrank.ai/week-10.html), checked 2026-10-09, adds a broader launch/demo/story package. This note follows the supplied maintenance card; check the current portal card before submission. A demo, badge, or showcase submission is not established by this note.
 '''
         doc(folder, "deliverable", body)
-    write(CONTEXT / "fluency_manifest.json", json.dumps({"created_date": DATE, "timezone": "Asia/Karachi", "name": NAME, "confirmed_field": "Backend Development and Engineering", "audience_status": "confirmed", "action_status": "confirmed", "weekly_tasks_status": "all 12 confirmed by user", "github_username": "Hamza2-2", "next_case": "Deploy and harden the backend review API", "next_case_intention_status": "confirmed by user", "next_case_work_status": "planned; no production deployment or hardening claimed", "next_case_page": "work/site/dist/cases/backend-api-deployment.html", "folders": [str(p.relative_to(ROOT)).replace("\\", "/") for p in [audit_folder, map_folder, proof_folder] + [WORK / "capstones" / x[0] for x in caps]], "external_actions": "none by these document-generation scripts", "verification_notebooks": "not applicable to prose deliverables"}, indent=2))
+    write(CONTEXT / "fluency_manifest.json", json.dumps({"created_date": DATE, "timezone": "Asia/Karachi", "name": NAME, "confirmed_field": "Backend Development and Engineering", "exact_primary_claim": CLAIM.rstrip('.'), "primary_claim_status": "explicitly confirmed by user", "code_review_understanding_status": "not established by claim confirmation", "account_course_status": "unconfirmed; genuine evidence pending", "confirmation_receipt": "work/context/user_confirmations.json", "audience_status": "confirmed", "action_status": "confirmed", "weekly_tasks_status": "all 12 confirmed by user", "github_username": "Hamza2-2", "next_case": "Deploy and harden the backend review API", "next_case_intention_status": "confirmed by user", "next_case_work_status": "planned; no production deployment or hardening claimed", "next_case_page": "work/site/dist/cases/backend-api-deployment.html", "folders": [str(p.relative_to(ROOT)).replace("\\", "/") for p in [audit_folder, map_folder, proof_folder] + [WORK / "capstones" / x[0] for x in caps]], "external_actions": "none by these document-generation scripts", "verification_notebooks": "not applicable to prose deliverables"}, indent=2))
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ Saved 2026-10-09, Asia/Karachi. This is the actual local context document used b
 
 I am Hamza Afzal, focusing on backend development and engineering. I can build a tested backend API that converts anonymized search signals into explainable content-review priorities. I am building this proof for a backend engineering lead evaluating my backend project, so they can invite me to an interview about this backend project. The API contract, input validation, automated checks, and runnable example provide the evidence; any results from the starter dataset demonstrate a prototype rather than production readiness.
 
-Hamza confirmed his name, backend field, audience (a backend engineering lead), action (invite me to an interview), all 12 recurring weekly tasks, GitHub username Hamza2-2, and the next real piece 'Deploy and harden the backend review API' in this conversation. Account setup, Academy completion, and external Claude Project UI are not confirmed.
+Hamza explicitly confirmed the exact narrow portfolio claim above, his name, backend field, audience (a backend engineering lead), action (invite me to an interview), all 12 recurring weekly tasks, GitHub username Hamza2-2, and the next real piece 'Deploy and harden the backend review API' in this conversation. Claim confirmation does not establish that he has reviewed or understood all the AI-assisted code. Account setup, Academy completion, and external Claude Project UI remain unconfirmed.
 
 ## Tutor instructions
 

@@ -2,7 +2,7 @@
 
 Prepared for Hamza Afzal on 2026-10-09, Asia/Karachi.
 
-Status: Hamza confirmed identity, backend field, backend lead audience, and interview invitation action. Personalized statement and one-line why prepared; Hamza must review and be able to explain the demonstrated work.
+Status: Hamza explicitly confirmed the exact narrow portfolio claim, identity, backend field, backend lead audience, and interview invitation action. Statement and one-line why prepared. Confirmation does not establish that Hamza has reviewed or understood all AI-assisted code.
 
 Open `deliverable.pdf` or `deliverable.html`; the Markdown is editable. `source_requirements.md` records the supplied card. Evidence and missing items are explicit in the deliverable. This task is kept separate from every other assignment/capstone.
 

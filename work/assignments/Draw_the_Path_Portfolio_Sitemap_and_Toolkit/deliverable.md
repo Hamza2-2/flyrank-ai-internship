@@ -6,7 +6,7 @@ Hamza Afzal · Backend Development and Engineering · 2026-10-09
 
 I am Hamza Afzal, focusing on backend development and engineering. I can build a tested backend API that converts anonymized search signals into explainable content-review priorities. I am building this proof for a backend engineering lead evaluating my backend project, so they can invite me to an interview about this backend project. The API contract, input validation, automated checks, and runnable example provide the evidence; any results from the starter dataset demonstrate a prototype rather than production readiness.
 
-Audience/action are confirmed. Owned repo: [flyrank-ai-internship](https://github.com/Hamza2-2/flyrank-ai-internship). The [GitHub interview-request link](https://github.com/Hamza2-2/flyrank-ai-internship/issues/new?title=Interview%20invitation%20for%20Hamza%20Afzal) opens a prefilled issue form; the visitor chooses whether to submit it. Opening the link does not send a request automatically.
+The exact narrow primary claim, audience, and action are explicitly user-confirmed. Owned repo: [flyrank-ai-internship](https://github.com/Hamza2-2/flyrank-ai-internship). The [GitHub interview-request link](https://github.com/Hamza2-2/flyrank-ai-internship/issues/new?title=Interview%20invitation%20for%20Hamza%20Afzal) opens a prefilled issue form; the visitor chooses whether to submit it. Opening the link does not send a request automatically. Code review/understanding is not established by claim confirmation.
 
 ## Small sitemap and page purpose
 
@@ -34,4 +34,4 @@ Open `pressure_test.md`/`pressure_test.html` for the actual prompt and answer pr
 
 ## Submission status
 
-Prepared: map, context doc, actual pressure-test output, documented changes, confirmed field/person/action, and a user-chosen GitHub interview-request link. Pending: toolkit account evidence and genuine Claude/physical sketch evidence if required by the supplied card. The screenshot artifacts show local files and must never be described as external account UI.
+Prepared: map, context doc, actual pressure-test output, documented changes, exact user-confirmed claim/field/person/action, and a user-chosen GitHub interview-request link. Pending: toolkit account evidence and genuine Claude/physical sketch evidence if required by the supplied card. The screenshot artifacts show local files and must never be described as external account UI.

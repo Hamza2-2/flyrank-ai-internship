@@ -31,7 +31,9 @@ paper = converter.convert(report)
 paper = re.sub(r'href="(?:notebooks/|work/notebooks/)([^"/]+\.ipynb)"', r'href="downloads/\1"', paper)
 paper = paper.replace('src="figures/', 'src="assets/').replace('href="outputs/', 'href="downloads/')
 paper = paper.replace('href="scripts/capstone_analysis.py"', 'href="downloads/capstone_analysis.py"')
+paper = paper.replace('href="scripts/warehouse_extension.py"', 'href="downloads/warehouse_extension.py"')
 paper = paper.replace('href="capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_extension_plan.md"', 'href="downloads/warehouse_extension_plan.md"')
+paper = paper.replace('href="capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_execution.md"', 'href="downloads/warehouse_execution.md"')
 
 for path in (ROOT / "work/figures").glob("capstone_*.png"):
     shutil.copy2(path, DIST / "assets" / path.name)
@@ -41,7 +43,9 @@ files = [ROOT / "notebooks/01_first_look_and_discovery.ipynb", ROOT / "notebooks
          ROOT / "work/outputs/capstone_leakage_audit.json", ROOT / "work/outputs/capstone_ranked_actions.json",
          ROOT / "work/backend_api/server.py", ROOT / "work/backend_api/test_api.py", ROOT / "work/backend_api/openapi.json",
          ROOT / "work/capstone_report.md", ROOT / "work/scripts/capstone_analysis.py",
-         ROOT / "work/capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_extension_plan.md"]
+         ROOT / "work/scripts/warehouse_extension.py",
+         ROOT / "work/capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_extension_plan.md",
+         ROOT / "work/capstones/ML_Google_Search_Ranking_and_Discoverability/warehouse_execution.md"]
 for path in files:
     if not path.exists():
         raise FileNotFoundError(path)
