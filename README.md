@@ -16,7 +16,7 @@ no private client data, no setup headaches.
 
 ---
 
-## Quickstart — first win in 2 minutes
+## Quickstart  
 
 The fastest path is Google Colab (one click, zero install). Open Notebook 1 and run all cells:
 
@@ -32,7 +32,7 @@ The fastest path is Google Colab (one click, zero install). Open Notebook 1 and 
 
 ---
 
-## Your assignment notebooks — open, fill, save, done
+## Assignment notebooks — open, fill, save, done
 
 Every assignment is one pre-named skeleton notebook in `work/notebooks/`. Click its badge,
 fill the sections in order, then **File → Save a copy in GitHub → OK** — the dialog is
@@ -73,7 +73,7 @@ That runs the whole pipeline on the bundled sample and writes results to `output
 
 ---
 
-## What you get
+## Stored
 
 | Path | What it is |
 |---|---|
@@ -84,7 +84,7 @@ That runs the whole pipeline on the bundled sample and writes results to `output
 | `work/` | **Your space.** Lane experiments and your capstone live here — see `work/README.md`. |
 | `docs/` | The core docs + the data dictionary (see below). |
 
-### Read these (in `docs/`)
+### Readables (in `docs/`)
 
 1. **`ml-core-foundation-framework.md`** — the first-principles map of ML as a whole system. The backbone of the live sessions.
 2. **`ml-intern-dataset-and-lane-guide.md`** — how to use the data safely, the capstone workflow, and the analysis "lanes" you can pick from.
@@ -93,7 +93,7 @@ That runs the whole pipeline on the bundled sample and writes results to `output
 
 ---
 
-## The pipeline (what `run_all.py` does)
+## Pipeline (what `run_all.py` does)
 
 ```text
 01_prepare_features.py   clean + build the feature vector, define the label
